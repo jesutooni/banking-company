@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { lexend } from "@/assets/fonts";
 import "./globals.css";
+import TheHeader from "@/components/TheHeader";
 
 export const metadata: Metadata = {
   title: "Your Bank",
@@ -14,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={lexend.className}>{children}</body>
+      <body className={lexend.className}>
+        <TheHeader />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
