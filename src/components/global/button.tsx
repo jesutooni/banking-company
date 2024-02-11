@@ -5,21 +5,21 @@ const Button: React.FC<ButtonProps> = ({
   theme = "primary",
   loading = false,
   disabled,
-  size = "md",
+  size = "sm",
   children,
 }) => {
   const themes = {
-    primary: "bg-green text-grey-15",
+    primary: "bg-green text-grey-11",
     secondary: "bg-grey-15 text-white",
+    transparent: "bg-transparent text-white",
   };
   const sizes = {
-    sm: "py-2 px-4",
-    md: "py-3.5 px-6",
-    lg: "py-4 px-8",
+    sm: "py-3 px-6 text-sm",
+    lg: "py-4 px-8 text-lg",
   };
   return (
     <button
-      className={`${themes[theme]} ${sizes[size]} rounded-full text-lg font-normal text-center`}
+      className={`${themes[theme]} ${sizes[size]} rounded-full font-normal text-center`}
       disabled={disabled || loading}
     >
       {loading ? (
