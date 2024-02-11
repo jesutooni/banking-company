@@ -4,8 +4,8 @@ import Image from "next/image";
 const Icon: React.FC<IconProps> = ({
   name,
   alt,
-  width = 20,
-  height = 20,
+  width = 2,
+  height = 2,
 }) => {
   return (
     <div>

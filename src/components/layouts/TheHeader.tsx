@@ -1,3 +1,4 @@
+import AppLogo from "../AppLogo";
 import Link from "next/link";
 import Icon from "../global/Icon";
 import Button from "../global/button";
@@ -25,12 +26,7 @@ const TheHeader = () => {
     <header className="pt-[30px] px-4">
       <nav className="max-w-screen-xl mx-auto rounded-full px-3.5 sm:px-6 py-3.5 bg-grey-11 flex justify-between items-center">
         <div>
-          <div className="hidden md:block">
-            <Icon name="AppLogoDesktop" width={10} height={10} />
-          </div>
-          <div className="md:hidden">
-            <Icon name="AppLogoMobile" width={10} height={10} />
-          </div>
+          <AppLogo />
         </div>
         <ul className="hidden md:flex gap-[26px]">
           {navs.map((nav, index) => (
