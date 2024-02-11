@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { lexend } from "@/assets/fonts";
 import "./globals.css";
-import TheHeader from "@/components/TheHeader";
+import TheHeader from "@/components/layouts/TheHeader";
 
 export const metadata: Metadata = {
   title: "Your Bank",

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Icon from "./global/Icon";
-import Button from "./global/button";
+import Icon from "../global/Icon";
+import Button from "../global/button";
 
 const TheHeader = () => {
   const navs = [
