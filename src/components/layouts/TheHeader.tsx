@@ -24,7 +24,7 @@ const TheHeader = () => {
   ];
   return (
     <header className="pt-[30px] px-4">
-      <nav className="max-w-screen-xl mx-auto rounded-full px-3.5 sm:px-6 py-3.5 bg-grey-11 flex justify-between items-center">
+      <nav className="max-w-screen-xl mx-auto rounded-full px-3.5 sm:px-6 py-3.5 bg-grey-11 flex justify-between items-center border border-grey-15">
         <div>
           <AppLogo />
         </div>

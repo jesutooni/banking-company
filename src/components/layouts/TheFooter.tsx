@@ -74,7 +74,7 @@ const TheFooter = () => {
           ))}
         </div>
 
-        <div className="bg-grey-10 flex flex-col md:flex-row gap-5 items-center justify-between  rounded-xl md:rounded-full pt-12 pb-[30px] md:p-3 text-grey-70 text-sm font-light relative">
+        <div className="bg-grey-10 flex flex-col md:flex-row gap-5 items-center justify-between  rounded-xl md:rounded-full pt-12 pb-[30px] md:p-3 text-grey-70 text-sm font-light relative border border-grey-15">
           <div className="flex gap-2 absolute md:static -top-[22px]">
             {socials.map((social, index) => (
               <a
