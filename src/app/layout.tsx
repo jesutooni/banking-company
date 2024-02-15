@@ -3,6 +3,7 @@ import { lexend } from "@/assets/fonts";
 import "./globals.css";
 import TheHeader from "@/components/layouts/TheHeader";
 import TheFooter from "@/components/layouts/TheFooter";
+import Testimonials from "@/components/sections/Testimonials";
 
 export const metadata: Metadata = {
   title: "Your Bank",
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className={lexend.className}>
         <TheHeader />
         <main>{children}</main>
+        <Testimonials />
         <TheFooter />
       </body>
     </html>

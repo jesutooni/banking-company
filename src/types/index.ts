@@ -8,7 +8,6 @@ export interface ButtonProps {
 
 export interface IconProps {
   name: string;
-  width?: number;
-  height?: number;
+  size?: number;
   alt?: string;
 }
