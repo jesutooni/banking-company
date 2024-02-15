@@ -45,7 +45,7 @@ const TheHeader = () => {
           <Button size="sm">Login</Button>
         </div>
         <div className="md:hidden w-14 h-10 rounded-full bg-green flex items-center justify-center">
-          <Icon name="Hamburger" width={2.5} height={2.5} />
+          <Icon name="Hamburger" size={2.5} />
         </div>
       </nav>
     </header>

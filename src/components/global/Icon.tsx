@@ -1,19 +1,14 @@
 import { IconProps } from "@/types";
 import Image from "next/image";
 
-const Icon: React.FC<IconProps> = ({
-  name,
-  alt,
-  width = 2,
-  height = 2,
-}) => {
+const Icon: React.FC<IconProps> = ({ name, alt, size = 2 }) => {
   return (
     <div>
       <Image
         src={`/assets/icons/${name}.svg`}
         alt={alt || name}
-        width={width * 10}
-        height={height * 10}
+        width={size * 10}
+        height={size * 10}
       />
     </div>
   );
