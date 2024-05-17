@@ -12,7 +12,7 @@ const Auth = ({
 }) => {
   return (
     <section className="mx-4 mt-[30px] md:mt-[50px]">
-      <div className="max-w-5xl mx-auto w-full py-20 text-center  border border-grey-15 rounded-2xl px-[30px] relative">
+      <div className="max-w-5xl mx-auto w-full py-8 md:py-20 text-center  border border-grey-15 rounded-2xl px-[30px] relative">
         <div className="absolute top-0 right-0">
           <Image
             src="/assets/abstract.svg"
