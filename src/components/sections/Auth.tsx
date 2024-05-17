@@ -13,7 +13,7 @@ const Auth = ({
   return (
     <section className="mx-4 mt-[30px] md:mt-[50px]">
       <div className="max-w-5xl mx-auto w-full py-20 text-center  border border-grey-15 rounded-2xl px-[30px] relative">
-        <div className="absolute top-0 right-0 z-10">
+        <div className="absolute top-0 right-0">
           <Image
             src="/assets/abstract.svg"
             alt="abstract design"
@@ -22,7 +22,7 @@ const Auth = ({
           />
         </div>
         <Image
-          className="absolute inset-0 opacity-30 mix-blend-overlay"
+          className="absolute -z-10 inset-0 opacity-40 mix-blend-overlay"
           src="/assets/auth-background.png"
           layout="fill"
           objectFit="cover"
