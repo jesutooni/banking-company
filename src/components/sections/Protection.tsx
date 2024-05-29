@@ -1,5 +1,6 @@
 import protections from "@/data/protection";
 import Icon from "../global/Icon";
+import Image from "next/image";
 
 const Protection = () => {
   return (
@@ -34,7 +35,7 @@ interface ProtectionType {
 
 const ProtectionCard = ({ protection }: { protection: ProtectionType }) => {
   return (
-    <div className="border border-grey-15 rounded-[20px] p-6 md:p-9">
+    <div className="border border-grey-15 rounded-[20px] p-6 md:p-9 relative">
       <div className="flex items-center gap-3.5">
         <Icon name={protection.icon} size={7} />
         <h3 className="text-white text-sm md:text-lg">{protection.title}</h3>
@@ -42,6 +43,12 @@ const ProtectionCard = ({ protection }: { protection: ProtectionType }) => {
       <p className="text-grey-70 font-light text-xs md:text-base mt-5">
         {protection.teaser}
       </p>
+      <Image className="absolute inset-0 opacity-50 mix-blend-screen"
+        src="/assets/protection-background.png"
+        layout="fill"
+        objectFit="cover"
+        alt="background"
+      />
     </div>
   );
 };
