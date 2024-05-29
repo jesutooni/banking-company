@@ -1,4 +1,4 @@
-const testimonials = [
+const testimonials: { name: string; testimony: string }[] = [
   {
     name: "Sara T",
     testimony:
