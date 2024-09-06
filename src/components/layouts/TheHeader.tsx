@@ -45,10 +45,10 @@ const TheHeader = () => {
           ))}
         </ul>
         <div className="hidden lg:flex items-center">
-          <Button theme="transparent" size="sm">
+          <Button href="/auth/register" theme="transparent" size="sm">
             Sign Up
           </Button>
-          <Button size="sm">Login</Button>
+          <Button href="/auth/login" size="sm">Login</Button>
         </div>
         <div className="md:hidden w-14 h-10 rounded-full bg-green flex items-center justify-center">
           <Icon name="Hamburger" size={2.5} />

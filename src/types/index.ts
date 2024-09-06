@@ -4,6 +4,7 @@ export interface ButtonProps {
   disabled?: boolean;
   size?: "sm" | "lg" | "full";
   children: React.ReactNode;
+  href?: string
 }
 
 export interface IconProps {
