@@ -21,6 +21,7 @@ const Hero = ({ teaser, heading, description, image }: HeroInfo) => {
           />
         </div>
         <div className="bg-grey-10 p-6 md:p-10 lg:p-14 rounded-[20px] md:rounded-tl-[20px] md:rounded-tr-none md:rounded-br-[60px] md:rounded-bl-[20px] max-w-[658px] absolute   md:top-10 md:left-10 z-20 text-center md:text-left">
+          <p className="text-sm md:text-lg text-white">{teaser}</p>
           <h2 className="text-white font-medium text-[28px] md:text-4xl lg:text-5xl leading-9 md:leading-10 lg:leading-[62px]">
             {headings[0]}
             <br />
