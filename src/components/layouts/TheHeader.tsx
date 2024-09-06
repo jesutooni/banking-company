@@ -1,9 +1,13 @@
+"use client";
+
 import AppLogo from "../AppLogo";
 import Link from "next/link";
 import Icon from "../global/Icon";
 import Button from "../global/button";
+import { usePathname } from "next/navigation";
 
 const TheHeader = () => {
+  const pathname = usePathname();
   const navs = [
     {
       name: "Home",
@@ -32,7 +36,9 @@ const TheHeader = () => {
           {navs.map((nav, index) => (
             <li
               key={index}
-              className="cursor-pointer text-sm text-white hover:text-green transition-colors duration-300 ease-in-out"
+              className={`cursor-pointer text-sm text-white hover:text-green transition-colors duration-300 ease-in-out  py-2.5 px-[18px] rounded-full ${
+                pathname === nav.path && "bg-grey-15"
+              }`}
             >
               <Link href={nav.path}>{nav.name}</Link>
             </li>
