@@ -2,7 +2,7 @@ import faqs from "@/data/faq";
 
 const Faqs = () => {
   return (
-    <section className="max-w-screen-xl mx-auto px-6">
+    <section className="max-w-screen-xl mx-auto px-6 py-14">
       <div>
         <h2 className="font-medium text-[28px] md:text-[38px] text-white text-center md:text-left">
           <span className="text-green">Frequently</span> Asked Questions

@@ -16,3 +16,16 @@ html {
 body {
   background-color: #1e1e1e;
 }
+
+.protection {
+  background: linear-gradient(
+      267.5deg,
+      #1c1c1c 40.67%,
+      rgba(28, 28, 28, 0) 99.81%
+    ),
+    linear-gradient(
+      106.06deg,
+      rgba(202, 255, 51, 0.05) -29.45%,
+      rgba(202, 255, 51, 0) 27.86%
+    );
+}
